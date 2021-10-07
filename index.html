@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <div id="form-header">
+            <h3>Event Registration Form</h3>
+        </div>
+        <div id="form-content">
+            <form id="form">
+                <div id="form-name-section">
+                    <label for="fname">Name</label>
+                    <input type="text" name="fname" id="first-name">
+                    <input type="text" name="lname" id="last-name">
+                </div>
+                <div id="form-company-section">
+                    <label for="company">Company</label>
+                    <input type="text" name="company">
+                </div>
+                <div id="form-email-section">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div id="form-phone-section">
+                    <label for="areacode">Phone</label>
+                    <input type="number" name="areacode">
+                    <input type="number" name="phonenumber">
+                </div>
+                <div id="form-subject-section">
+                    <label for="Subject">Subject</label>
+                    <input list="list-items" name="Subject">
+                    <datalist id="list-items">
+                        <option value="Option 1">
+                        <option value="Option 2">
+                        <option value="Option 3">
+                        </datalist>
+                </div>
+                <div id="form-existing-section">
+                    <label>Are you an existing costumer?</label>
+                    <input type="radio" id="yescostumer" value="Yes">
+                    <label for="yescostumer">Yes</label>
+                    <input type="radio" name="nocostumer" value="No">
+                    <label for="nocostumer">No</label>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

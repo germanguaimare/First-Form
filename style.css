@@ -1,0 +1,48 @@
+body {
+
+    background-color: cadetblue;
+}
+
+#form-container {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 440px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#form-header {
+    height:10%;
+    width: 100%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h3 {
+    color: white;
+   text-align: center;
+
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+}
+
+#form-name-section, #form-company-section, #form-email-section, #form-phone-section,
+#form-subject-section, #form-existing-section{
+    display: flex;
+    justify-content:space-evenly;
+    border: solid 1px red;
+    align-content: center;
+    text-align: left;
+    margin-top: auto;
+}
+
+#first-name, #last-name {
+    width: 120px;
+}
