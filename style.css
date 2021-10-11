@@ -1,48 +1,86 @@
 body {
 
-    background-color: cadetblue;
+    background: rgb(226,22,231);
+    background: linear-gradient(90deg, rgba(226,22,231,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%); 
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+       
 }
 
 #form-container {
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 440px;
+    border-radius: 5px;
+    margin: 100px;
+    width: 35%;
     background-color: white;
-    border-radius: 10px;
-}
-
-#form-header {
-    height:10%;
-    width: 100%;
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 40%;
+    height: 300px;
 }
 
 h3 {
-    color: white;
+   color: white;
    text-align: center;
-
+   padding: 0%;
 }
 
-form {
-    display:flex;
+#form-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    background-color: black;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#form-top {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: 20px auto;
+}
+
+#form-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#labels, #inputs {
+    display: flex;
     flex-direction: column;
 }
 
-#form-name-section, #form-company-section, #form-email-section, #form-phone-section,
-#form-subject-section, #form-existing-section{
+#send {
     display: flex;
-    justify-content:space-evenly;
-    border: solid 1px red;
-    align-content: center;
-    text-align: left;
-    margin-top: auto;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-#first-name, #last-name {
-    width: 120px;
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+#send p {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+ }
